@@ -17,11 +17,11 @@ io.on('connection', (socket) => {
     });
 });
 
-// const httpPort = process.env.PORT || 3000;
+const httpPort = process.env.PORT || 3000;
 // app.listen(httpPort, () => {
 //     console.log('Listening on port 3000');
 // });
 
-http.listen(3000, () => {
-    console.log('WebSocket working on 3333');
+http.listen(httpPort, () => {
+    console.log('Listening to 3333');
 });
