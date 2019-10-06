@@ -26,6 +26,14 @@ socket.on("chat message", msg => {
   message.appendChild(username);
   message.appendChild(textMessage);
   document.querySelector("#message-box").appendChild(message);
+
+  let messageBox = document.querySelector('#message-box');
+
+  if( messageBox.children.length > 20 ){
+    messageBox.removeChild(messageBox.children[0]);
+  }
+
+  messageBox.scrollTo(0, messageBox.scrollHeight);
 });
 
 document.querySelector("#send-button").addEventListener("click", sendMessage);
