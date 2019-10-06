@@ -4,11 +4,13 @@ function sendMessage() {
   let inputMessage = document.querySelector("#input-message");
   let nickname = document.querySelector("#input-nickname").value;
 
-  socket.emit("chat message", {
-    nickname: nickname,
-    message: inputMessage.value
-  });
-  inputMessage.value = "";
+  if (inputMessage.value != "") {
+    socket.emit("chat message", {
+      nickname: nickname,
+      message: inputMessage.value
+    });
+    inputMessage.value = "";
+  }
 }
 
 socket.on("chat message", msg => {
@@ -27,9 +29,9 @@ socket.on("chat message", msg => {
   message.appendChild(textMessage);
   document.querySelector("#message-box").appendChild(message);
 
-  let messageBox = document.querySelector('#message-box');
+  let messageBox = document.querySelector("#message-box");
 
-  if( messageBox.children.length > 20 ){
+  if (messageBox.children.length > 20) {
     messageBox.removeChild(messageBox.children[0]);
   }
 
@@ -37,3 +39,9 @@ socket.on("chat message", msg => {
 });
 
 document.querySelector("#send-button").addEventListener("click", sendMessage);
+document.querySelector("#input-message").addEventListener("keyup", e => {
+  if (e.keyCode == 13) {
+    e.preventDefault();
+    sendMessage();
+  }
+});
