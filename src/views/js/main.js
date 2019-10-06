@@ -1,4 +1,4 @@
-const socket = io("http://localhost:3333");
+const socket = io();
 
 function sendMessage() {
   let inputMessage = document.querySelector("#input-message");
