@@ -1,5 +1,5 @@
 # Buteco
-A simple buteco styled chat built with nodejs. Available on [Buteco](https://buteco-io.herokuapp.com/)
+A simple buteco styled chat built with nodejs. Available on [Buteco](https://buteco-io.herokuapp.com/).
 
 ![ScreenShot](https://github.com/raymag/buteco/blob/master/src/views/img/screenshot.jpg?raw=true)
 
@@ -11,7 +11,7 @@ $ git clone https://github.com/raymag/buteco.git
 $ cd buteco
 ```
 
-### Installing
+### Installing dependencies
 ```bash
 $ npm install
 ```
@@ -20,5 +20,5 @@ $ npm install
 ```bash
 $ npm src/server.js
 ```
-# Contributing
+## Contributing
 You are free to clone this repository, contribute with issues and pull requests, but be sure to follow our code of conduct and to be respectful.
