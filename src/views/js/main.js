@@ -17,7 +17,7 @@ socket.on("chat message", msg => {
 
   let username = document.createElement("span");
   username.className = "username";
-  username.innerText = `${msg["nickname"]}: `;
+  username.innerHTML = `${msg["nickname"]}&nbsp&nbsp&nbsp`;
 
   let textMessage = document.createElement("span");
   textMessage.className = "text-message";

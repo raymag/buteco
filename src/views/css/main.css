@@ -37,6 +37,8 @@ body {
   height: 60vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 #message-box::-webkit-scrollbar {
   background: var(--color-darker-purpler);
