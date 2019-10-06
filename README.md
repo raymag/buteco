@@ -1,5 +1,7 @@
 # Buteco
-A simple buteco styled chat built with nodejs.
+A simple buteco styled chat built with nodejs. Available on [Buteco](https://buteco-io.herokuapp.com/)
+
+![ScreenShot](https://github.com/raymag/buteco/src/views/img/screenshot.jpg);
 
 ## Installing
 
