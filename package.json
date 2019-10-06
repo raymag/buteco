@@ -1,0 +1,22 @@
+{
+  "name": "buteco",
+  "version": "1.0.0",
+  "description": "A buteco styled webchat built with nodejs and socketio",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webchat",
+    "chat",
+    "nodejs",
+    "server",
+    "buteco"
+  ],
+  "author": "Carlos Magno Nascimento",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}

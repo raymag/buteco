@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-light-purple: rgba(140, 0, 255, 0.541);
+  --color-purple: rgb(140, 0, 255);
+  --color-dark-purple: rgb(104, 21, 172);
+  --color-darker-purpler: rgb(50, 15, 80);
+}
+
+body {
+  background: var(--color-dark-purple);
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+#chat {
+  background: var(--color-purple);
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 1px 5px 15px 3px var(--color-darker-purpler);
+}
+#message-box {
+  background: var(--color-dark-purple);
+  width: 50vw;
+  height: 60vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+#message-box::-webkit-scrollbar {
+  background: var(--color-darker-purpler);
+}
+#message-box::-webkit-scrollbar-thumb {
+  background: rgba(238, 238, 238, 0.637);
+}
+#message-box::-webkit-scrollbar-thumb:hover {
+  background: rgb(160, 160, 160);
+}
+#message-box::-webkit-scrollbar-button {
+  background: rgba(238, 238, 238, 0.15);
+}
+
+#input-box {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#input-message {
+  width: 85%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background: var(--color-darker-purpler);
+  color: #eee;
+}
+#send-button {
+  width: 10%;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  font-weight: 900;
+  color: var(--color-purple);
+  background: var(--color-darker-purpler);
+}
+
+#input-nickname {
+  width: 50vw;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background: var(--color-darker-purpler);
+  color: #eee;
+}
+
+@media only screen and (max-width: 720px) {
+  #message-box {
+    width: 85vw;
+  }
+  #input-nickname {
+    width: 80vw;
+  }
+}
+
+.message {
+  width: 100%;
+  height: auto;
+  background: var(--color-light-purple);
+  margin: 2px 0px;
+  padding: 5px 2px;
+}
+.message .username {
+  color: var(--color-darker-purpler);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.message .text-message {
+  color: #eee;
+}
