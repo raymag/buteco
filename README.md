@@ -18,7 +18,7 @@ $ npm install
 
 ### Running
 ```bash
-$ npm src/server.js
+$ node src/server.js
 ```
 ## Contributing
 You are free to clone this repository, contribute with issues and pull requests, but be sure to follow our code of conduct and to be respectful.
